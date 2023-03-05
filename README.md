@@ -61,7 +61,7 @@ It's not enough to write the code well. The code has to be kept clean over time.
 [Boy Scout Rule](https://biratkirat.medium.com/step-8-the-boy-scout-rule-robert-c-martin-uncle-bob-9ac839778385)
 
 > Always leave the code you're editing a little better than you found it.
-> <br> - Robert C. Martin
+> <br> - Boy Scout
 
 <a name="chapter2">
 <h1>Chapter 2 - Meaningful Names</h1>

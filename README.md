@@ -54,7 +54,14 @@ Above could be few of the reasons for writing bad code.
 - Developers always complain about managers, customers.
 
 > It's the responsibility of developers to help work out the schedule. Developers are responsible in clearly communicating
-> the way we think
+> the way we think and project managers look to us to help work out the schedule.
+
+It's not enough to write the code well. The code has to be kept clean over time.
+
+[Boy Scout Rule](#https://biratkirat.medium.com/step-8-the-boy-scout-rule-robert-c-martin-uncle-bob-9ac839778385)
+
+> Always leave the code you're editing a little better than you found it.
+> <br> - Robert C. Martin
 
 <a name="chapter2">
 <h1>Chapter 2 - Meaningful Names</h1>

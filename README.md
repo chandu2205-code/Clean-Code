@@ -108,5 +108,8 @@ It's not enough to write the code well. The code has to be kept clean over time.
 <a name="chapter16">
 <h1>Chapter 16 - Refactoring SerialDate</h1>
 </a>
+<a name="chapter17">
+<h1>Chapter 17 - Smells and Heuristics</h1>
+</a>
 
 

@@ -66,6 +66,20 @@ It's not enough to write the code well. The code has to be kept clean over time.
 <a name="chapter2">
 <h1>Chapter 2 - Meaningful Names</h1>
 </a>
+Names are everywhere in software. we name jar,ear,war,packages,classes,functions,variables.
+Let's follow simple rules for creating good names.
+
+### Use Intention-Revealing Names
+The name of a variable,function,class should answer all the big questions.
+It should answer all the big questions like
+- Why it exists
+- What it does
+- How it is used
+
+If a name requires a comment, then it does not reveal its intent,
+rather than writing a comment of two to three words change variable name :smile:
+
+
 <a name="chapter3">
 <h1>Chapter 3 - Functions</h1>
 </a>

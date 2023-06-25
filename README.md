@@ -58,8 +58,9 @@ Above could be few of the reasons for writing bad code.
 
 It's not enough to write the code well. The code has to be kept clean over time.
 
-[Boy Scout Rule](https://biratkirat.medium.com/step-8-the-boy-scout-rule-robert-c-martin-uncle-bob-9ac839778385)
+About Boy Scout [Boy Scout Rule](https://biratkirat.medium.com/step-8-the-boy-scout-rule-robert-c-martin-uncle-bob-9ac839778385)
 
+![img.png](img.png)
 > Always leave the code you're editing a little better than you found it.
 > <br> - Boy Scout
 
@@ -77,8 +78,48 @@ It should answer all the big questions like
 - How it is used
 
 If a name requires a comment, then it does not reveal its intent,
-rather than writing a comment of two to three words change variable name :smile:
+rather than writing a comment of two to three words use intent revealing variable name :smile:
 
+| Does Not Reveal Intention | Intention Revealing Name      |
+|---------------------------|-------------------------------|
+ | `int d;`                  | `int elapsedTimeInDays;`      |
+
+````java
+public List<int[]> getThem() {
+    List<int[]> list1 = new ArrayList<int[]>();
+    for (int[] x : theList) {
+        if (x[0] == 4) {
+            list1.add(x);
+        }    
+    }
+    return list1;
+}
+````
+Above code doesn't answer below questions:
+1. What kind of things are stored in the `list1` ?
+2. What is the significance of `zeroth` subscript in the list ?
+3. what is the significance of value `4` ?
+
+we can improve the 
+````java
+public List<Cell> getFlaggedCells() {
+    List<Cell> flaggedCells = new ArrayList<Cell>();
+    for (Cell cell : gameBoard) {
+        if (cell.isFlagged()) {
+            flaggedCells.add(cell);
+        }    
+    }
+    return flaggedCells;
+}
+````
+### Avoid Disinformation
+
+Programmers must avoid leaving false clues that conceal the actual meaning of the code.
+
+- Avoid using names whose established meaning vary from our intended meaning.
+   - Example: hp,aix,sco would be poor variable names because they are the name of the Unix platform or variants
+- Do not use xxxList as variable name to denote group of objects unless it's actually a list. If the container holding objects is not actually a list it may lead to false conclusions.
+- Beware of using names which vary in smaller shapes
 
 <a name="chapter3">
 <h1>Chapter 3 - Functions</h1>
